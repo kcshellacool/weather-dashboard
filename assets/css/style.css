@@ -1,5 +1,6 @@
 * {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition:0.2s;
 }
 
 body {
@@ -61,7 +62,7 @@ h1 {
 
 .submit-button {
     border:none;
-    width:25%;
+    width:13%;
     height:24px;
     border-radius: 8px;
     font-weight:700;
@@ -81,7 +82,7 @@ h1 {
 
 
 .forecast-cards {
-    display:flex;
+    display:none;
 }
 
 .cards {
@@ -93,12 +94,45 @@ h1 {
     background-color: var(--dark);
     color:var(--pink);
     font-weight:700;
-    display:none;
-    transition:0.2s;
+    
 }
 
 .uvindex {
     padding:0 20px;
     border-radius: 8px;
     text-align:center;
+}
+
+#box1 {
+    display: none;
+}
+
+#city-display {
+    display:inline;
+}
+
+h3 {
+    margin:0px 0px 10px 0px;
+}
+
+.cards p {
+    margin:2px 0;
+}
+
+img {
+    width:50px;
+}
+
+.historylist {
+    width:100%;
+    margin:10px auto;
+}
+
+.historylist button {
+    width:100%;
+    margin:10px auto;
+    border:none;
+    border-radius: 8px;
+    font-weight:700;
+    height:40px;
 }
