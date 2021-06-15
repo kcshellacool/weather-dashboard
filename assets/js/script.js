@@ -23,7 +23,7 @@ function search() {
 
     var cityname = document.querySelector("#city-name").value;
     
-    fetch('http://api.openweathermap.org/data/2.5/weather?q='+ cityname + '&appid=' + APIKEY +'&units=metric')
+    fetch('https://api.openweathermap.org/data/2.5/weather?q='+ cityname + '&appid=' + APIKEY +'&units=metric')
     .then (response => response.json())
     .then (function(response) {
 
@@ -46,7 +46,7 @@ function search() {
         // searchhistory.setAttribute("class","historylist")
         // document.getElementById("container").appendChild(searchhistory);
         searchhistory.innerHTML = "";
-        
+
         for (let i = 0; i < pulllist.length; i++) {
             var listbutton = document.createElement("button");
             listbutton.innerHTML = pulllist[i];
@@ -107,7 +107,7 @@ function search() {
         document.getElementById("uv-index").innerHTML = ' ' + uvindex;
 
         var icontoday = document.getElementById("icontoday");
-        icontoday.setAttribute("src", "http://openweathermap.org/img/wn/"+ response.current.weather[0].icon + "@2x.png");
+        icontoday.setAttribute("src", "https://openweathermap.org/img/wn/"+ response.current.weather[0].icon + "@2x.png");
 
         console.log(response.daily[0].dt)
 
@@ -121,7 +121,7 @@ function search() {
 
             datetitle.innerHTML = fcd;
             var fcicon = document.createElement("img");
-            fcicon.setAttribute("src", "http://openweathermap.org/img/wn/"+ response.daily[i].weather[0].icon + "@2x.png");
+            fcicon.setAttribute("src", "https://openweathermap.org/img/wn/"+ response.daily[i].weather[0].icon + "@2x.png");
 
             var fctemp = document.createElement("p")
             fctemp.innerHTML = 'Temp: ' + response.daily[i].temp.day + ' &#176;C';
@@ -155,7 +155,7 @@ function research() {
     var cityname = event.target.id;
     console.log(event.target.id)
     
-    fetch('http://api.openweathermap.org/data/2.5/weather?q='+ cityname + '&appid=' + APIKEY +'&units=metric')
+    fetch('https://api.openweathermap.org/data/2.5/weather?q='+ cityname + '&appid=' + APIKEY +'&units=metric')
     .then (response => response.json())
     .then (function(response) {
 
@@ -214,7 +214,7 @@ function research() {
         document.getElementById("uv-index").innerHTML = ' ' + uvindex;
 
         var icontoday = document.getElementById("icontoday");
-        icontoday.setAttribute("src", "http://openweathermap.org/img/wn/"+ response.current.weather[0].icon + "@2x.png");
+        icontoday.setAttribute("src", "https://openweathermap.org/img/wn/"+ response.current.weather[0].icon + "@2x.png");
 
         console.log(response.daily[0].dt)
 
@@ -228,7 +228,7 @@ function research() {
 
             datetitle.innerHTML = fcd;
             var fcicon = document.createElement("img");
-            fcicon.setAttribute("src", "http://openweathermap.org/img/wn/"+ response.daily[i].weather[0].icon + "@2x.png");
+            fcicon.setAttribute("src", "https://openweathermap.org/img/wn/"+ response.daily[i].weather[0].icon + "@2x.png");
 
             var fctemp = document.createElement("p")
             fctemp.innerHTML = 'Temp: ' + response.daily[i].temp.day + ' &#176;C';
