@@ -1,0 +1,104 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    margin:0;
+}
+
+:root {
+    --dark: #45465e; 
+    --pink: #DDBB99;
+}
+
+.title {
+    height:50px;
+    margin:0px;
+    padding:0px;
+    text-align: center;
+    background-color:var(--pink);
+    color:var(--dark);
+}
+
+h1 {
+    margin:0;
+}
+
+.big-container {
+    width:100%;
+
+}
+.container {
+    display:inline-block;
+    width:30%;
+    background-color: lightgray;
+    height:500px;
+    padding:10px;
+    border-radius: 8px;
+    margin:10px;
+}
+
+.hero {
+    display:inline-block;
+    position:absolute;
+    width: 65%;
+    padding:10px;
+
+}
+
+.input-box {
+    width:70%;
+    height:24px;
+    border:none;
+    border-radius: 8px;
+    font-weight:700;
+}
+
+.input-box::placeholder {
+    text-align:center;
+}
+
+
+.submit-button {
+    border:none;
+    width:25%;
+    height:24px;
+    border-radius: 8px;
+    font-weight:700;
+    transition:0.2s;
+}
+
+.submit-button:hover {
+    background-color: var(--dark);
+}
+
+.main-card {
+    padding:10px;
+    background-color: lightgray;
+    border-radius:8px;
+    font-weight:700;
+}
+
+
+.forecast-cards {
+    display:flex;
+}
+
+.cards {
+    padding: 10px;
+    border-radius: 8px;
+    width:15%;
+    margin:0 auto;
+    height:190px;
+    background-color: var(--dark);
+    color:var(--pink);
+    font-weight:700;
+    display:none;
+    transition:0.2s;
+}
+
+.uvindex {
+    padding:0 20px;
+    border-radius: 8px;
+    text-align:center;
+}

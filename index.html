@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Weather Dashboard</title>
+</head>
+<body>
+
+    <header class="title">
+        <h1>Weather Dashboard</h1>
+    </header>
+    <div id="big-container" class="big-container">
+    <div id="container" class="container">
+        <input type="text" class="input-box" id="city-name" placeholder="City">
+        <button type="submit" class="submit-button" onclick="search()">Search</button>
+    </div>
+    <div id="hero" class="hero">
+        <div id="main-card" class="main-card">
+            <h2 id="city-display">Search for a City<span id="datetoday"></span></h2>
+            <p>Temp: <span id="temp"></span></p>
+            <p>Wind: <span id="wind"></span></p>
+            <p>Humidity: <span id="humidity"></span></p>
+            <p>UV Index: <span id="uv-index" class ='uvindex'></span></p>
+        </div>
+        <h2>5-Day Forecast</h2>
+        <div id="forecast-cards" class="forecast-cards">
+            
+            <div id="day-1" class="cards">
+                <h3 id="date"></h3>
+                <img id="icon">
+                <p>Temp: <span id="fc-temp"></span></p>
+                <p>Wind: <span id="fc-wind"></span></p>
+                <p>Humidity: <span id="fc-humidity"></span></p>
+            </div>
+            <div id="day-1" class="cards">
+                <h3 id="date"></h3>
+                <img id="icon">
+                <p>Temp: <span id="fc-temp"></span></p>
+                <p>Wind: <span id="fc-wind"></span></p>
+                <p>Humidity: <span id="fc-humidity"></span></p>
+            </div>
+            <div id="day-1" class="cards">
+                <h3 id="date"></h3>
+                <img id="icon">
+                <p>Temp: <span id="fc-temp"></span></p>
+                <p>Wind: <span id="fc-wind"></span></p>
+                <p>Humidity: <span id="fc-humidity"></span></p>
+            </div>
+            <div id="day-1" class="cards">
+                <h3 id="date"></h3>
+                <img id="icon">
+                <p>Temp: <span id="fc-temp"></span></p>
+                <p>Wind: <span id="fc-wind"></span></p>
+                <p>Humidity: <span id="fc-humidity"></span></p>
+            </div>
+            <div id="day-1" class="cards">
+                <h3 id="date"></h3>
+                <img id="icon">
+                <p>Temp: <span id="fc-temp"></span></p>
+                <p>Wind: <span id="fc-wind"></span></p>
+                <p>Humidity: <span id="fc-humidity"></span></p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+</body>
+<script src="assets/js/script.js"></script>
+</html>
